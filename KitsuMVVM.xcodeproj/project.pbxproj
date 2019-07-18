@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86A9350A22E103E100FFFFB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9350922E103E100FFFFB7 /* AppDelegate.swift */; };
+		86A9350C22E103E100FFFFB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9350B22E103E100FFFFB7 /* SceneDelegate.swift */; };
+		86A9351022E103E300FFFFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A9350F22E103E300FFFFB7 /* Assets.xcassets */; };
+		86A9351322E103E300FFFFB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A9351222E103E300FFFFB7 /* Preview Assets.xcassets */; };
+		86A9351622E103E300FFFFB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A9351422E103E300FFFFB7 /* LaunchScreen.storyboard */; };
+		86A9352122E103E300FFFFB7 /* KitsuMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9352022E103E300FFFFB7 /* KitsuMVVMTests.swift */; };
+		86A9352C22E103E300FFFFB7 /* KitsuMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9352B22E103E300FFFFB7 /* KitsuMVVMUITests.swift */; };
+		86A9353E22E1051E00FFFFB7 /* AnimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9353D22E1051E00FFFFB7 /* AnimeListView.swift */; };
+		86A9354022E1056B00FFFFB7 /* AnimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9353F22E1056B00FFFFB7 /* AnimeListViewModel.swift */; };
+		86A9354222E1061200FFFFB7 /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354122E1061200FFFFB7 /* AnimeModel.swift */; };
+		86A9354422E1074600FFFFB7 /* AnimeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354322E1074600FFFFB7 /* AnimeListRow.swift */; };
+		86A9354622E107C200FFFFB7 /* AnimeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354522E107C200FFFFB7 /* AnimeDetailView.swift */; };
+		86A9354822E1091700FFFFB7 /* AnimeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354722E1091700FFFFB7 /* AnimeDetailViewModel.swift */; };
+		86A9354A22E10AFC00FFFFB7 /* AnimeDataFlowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354922E10AFC00FFFFB7 /* AnimeDataFlowType.swift */; };
+		86A9354C22E10B8800FFFFB7 /* SearchAnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354B22E10B8800FFFFB7 /* SearchAnimeModel.swift */; };
+		86A9354E22E10BF600FFFFB7 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354D22E10BF600FFFFB7 /* APIServiceError.swift */; };
+		86A9355022E10D6F00FFFFB7 /* TrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354F22E10D6F00FFFFB7 /* TrackerService.swift */; };
+		86A9356422E1102E00FFFFB7 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356322E1102E00FFFFB7 /* APIServices.swift */; };
+		86A9356622E110CE00FFFFB7 /* SearchAnimeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356522E110CE00FFFFB7 /* SearchAnimeRequest.swift */; };
+		86A9356822E111B200FFFFB7 /* ExperimentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356722E111B200FFFFB7 /* ExperimentService.swift */; };
+		86A9356A22E1163E00FFFFB7 /* AnimeAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356922E1163E00FFFFB7 /* AnimeAttributesModel.swift */; };
+		86A9357022E1216A00FFFFB7 /* ExperimentServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356C22E1216A00FFFFB7 /* ExperimentServiceType.swift */; };
+		86A9357122E1216A00FFFFB7 /* APIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356D22E1216A00FFFFB7 /* APIServiceType.swift */; };
+		86A9357222E1216A00FFFFB7 /* APIRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356E22E1216A00FFFFB7 /* APIRequestType.swift */; };
+		86A9357322E1216A00FFFFB7 /* TrackerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356F22E1216A00FFFFB7 /* TrackerType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86A9351D22E103E300FFFFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A934FE22E103E100FFFFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86A9350522E103E100FFFFB7;
+			remoteInfo = KitsuMVVM;
+		};
+		86A9352822E103E300FFFFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A934FE22E103E100FFFFB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86A9350522E103E100FFFFB7;
+			remoteInfo = KitsuMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86A9350622E103E100FFFFB7 /* KitsuMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitsuMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A9350922E103E100FFFFB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86A9350B22E103E100FFFFB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86A9350F22E103E300FFFFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86A9351222E103E300FFFFB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86A9351522E103E300FFFFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86A9351722E103E300FFFFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A9351C22E103E300FFFFB7 /* KitsuMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitsuMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A9352022E103E300FFFFB7 /* KitsuMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitsuMVVMTests.swift; sourceTree = "<group>"; };
+		86A9352222E103E300FFFFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A9352722E103E300FFFFB7 /* KitsuMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitsuMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A9352B22E103E300FFFFB7 /* KitsuMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitsuMVVMUITests.swift; sourceTree = "<group>"; };
+		86A9352D22E103E300FFFFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A9353D22E1051E00FFFFB7 /* AnimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListView.swift; sourceTree = "<group>"; };
+		86A9353F22E1056B00FFFFB7 /* AnimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModel.swift; sourceTree = "<group>"; };
+		86A9354122E1061200FFFFB7 /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		86A9354322E1074600FFFFB7 /* AnimeListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListRow.swift; sourceTree = "<group>"; };
+		86A9354522E107C200FFFFB7 /* AnimeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailView.swift; sourceTree = "<group>"; };
+		86A9354722E1091700FFFFB7 /* AnimeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewModel.swift; sourceTree = "<group>"; };
+		86A9354922E10AFC00FFFFB7 /* AnimeDataFlowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDataFlowType.swift; sourceTree = "<group>"; };
+		86A9354B22E10B8800FFFFB7 /* SearchAnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAnimeModel.swift; sourceTree = "<group>"; };
+		86A9354D22E10BF600FFFFB7 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		86A9354F22E10D6F00FFFFB7 /* TrackerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerService.swift; sourceTree = "<group>"; };
+		86A9356322E1102E00FFFFB7 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		86A9356522E110CE00FFFFB7 /* SearchAnimeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAnimeRequest.swift; sourceTree = "<group>"; };
+		86A9356722E111B200FFFFB7 /* ExperimentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentService.swift; sourceTree = "<group>"; };
+		86A9356922E1163E00FFFFB7 /* AnimeAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeAttributesModel.swift; sourceTree = "<group>"; };
+		86A9356C22E1216A00FFFFB7 /* ExperimentServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperimentServiceType.swift; sourceTree = "<group>"; };
+		86A9356D22E1216A00FFFFB7 /* APIServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceType.swift; sourceTree = "<group>"; };
+		86A9356E22E1216A00FFFFB7 /* APIRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestType.swift; sourceTree = "<group>"; };
+		86A9356F22E1216A00FFFFB7 /* TrackerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86A9350322E103E100FFFFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A9351922E103E300FFFFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A9352422E103E300FFFFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86A934FD22E103E100FFFFB7 = {
+			isa = PBXGroup;
+			children = (
+				86A9350822E103E100FFFFB7 /* KitsuMVVM */,
+				86A9351F22E103E300FFFFB7 /* KitsuMVVMTests */,
+				86A9352A22E103E300FFFFB7 /* KitsuMVVMUITests */,
+				86A9350722E103E100FFFFB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86A9350722E103E100FFFFB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86A9350622E103E100FFFFB7 /* KitsuMVVM.app */,
+				86A9351C22E103E300FFFFB7 /* KitsuMVVMTests.xctest */,
+				86A9352722E103E300FFFFB7 /* KitsuMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86A9350822E103E100FFFFB7 /* KitsuMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				86A9356B22E1216A00FFFFB7 /* Protocols */,
+				86A9353C22E1051200FFFFB7 /* Services */,
+				86A9353A22E1051200FFFFB7 /* Models */,
+				86A9353B22E1051200FFFFB7 /* Views */,
+				86A9353922E1051200FFFFB7 /* ViewModels */,
+				86A9350922E103E100FFFFB7 /* AppDelegate.swift */,
+				86A9350B22E103E100FFFFB7 /* SceneDelegate.swift */,
+				86A9350F22E103E300FFFFB7 /* Assets.xcassets */,
+				86A9351422E103E300FFFFB7 /* LaunchScreen.storyboard */,
+				86A9351722E103E300FFFFB7 /* Info.plist */,
+				86A9351122E103E300FFFFB7 /* Preview Content */,
+			);
+			path = KitsuMVVM;
+			sourceTree = "<group>";
+		};
+		86A9351122E103E300FFFFB7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86A9351222E103E300FFFFB7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86A9351F22E103E300FFFFB7 /* KitsuMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				86A9352022E103E300FFFFB7 /* KitsuMVVMTests.swift */,
+				86A9352222E103E300FFFFB7 /* Info.plist */,
+			);
+			path = KitsuMVVMTests;
+			sourceTree = "<group>";
+		};
+		86A9352A22E103E300FFFFB7 /* KitsuMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86A9352B22E103E300FFFFB7 /* KitsuMVVMUITests.swift */,
+				86A9352D22E103E300FFFFB7 /* Info.plist */,
+			);
+			path = KitsuMVVMUITests;
+			sourceTree = "<group>";
+		};
+		86A9353922E1051200FFFFB7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				86A9353F22E1056B00FFFFB7 /* AnimeListViewModel.swift */,
+				86A9354722E1091700FFFFB7 /* AnimeDetailViewModel.swift */,
+				86A9354922E10AFC00FFFFB7 /* AnimeDataFlowType.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		86A9353A22E1051200FFFFB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86A9354122E1061200FFFFB7 /* AnimeModel.swift */,
+				86A9356922E1163E00FFFFB7 /* AnimeAttributesModel.swift */,
+				86A9354B22E10B8800FFFFB7 /* SearchAnimeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86A9353B22E1051200FFFFB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86A9353D22E1051E00FFFFB7 /* AnimeListView.swift */,
+				86A9354322E1074600FFFFB7 /* AnimeListRow.swift */,
+				86A9354522E107C200FFFFB7 /* AnimeDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86A9353C22E1051200FFFFB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				86A9356322E1102E00FFFFB7 /* APIServices.swift */,
+				86A9354D22E10BF600FFFFB7 /* APIServiceError.swift */,
+				86A9354F22E10D6F00FFFFB7 /* TrackerService.swift */,
+				86A9356522E110CE00FFFFB7 /* SearchAnimeRequest.swift */,
+				86A9356722E111B200FFFFB7 /* ExperimentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86A9356B22E1216A00FFFFB7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				86A9356C22E1216A00FFFFB7 /* ExperimentServiceType.swift */,
+				86A9356D22E1216A00FFFFB7 /* APIServiceType.swift */,
+				86A9356E22E1216A00FFFFB7 /* APIRequestType.swift */,
+				86A9356F22E1216A00FFFFB7 /* TrackerType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86A9350522E103E100FFFFB7 /* KitsuMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A9353022E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVM" */;
+			buildPhases = (
+				86A9350222E103E100FFFFB7 /* Sources */,
+				86A9350322E103E100FFFFB7 /* Frameworks */,
+				86A9350422E103E100FFFFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KitsuMVVM;
+			productName = KitsuMVVM;
+			productReference = 86A9350622E103E100FFFFB7 /* KitsuMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86A9351B22E103E300FFFFB7 /* KitsuMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A9353322E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVMTests" */;
+			buildPhases = (
+				86A9351822E103E300FFFFB7 /* Sources */,
+				86A9351922E103E300FFFFB7 /* Frameworks */,
+				86A9351A22E103E300FFFFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86A9351E22E103E300FFFFB7 /* PBXTargetDependency */,
+			);
+			name = KitsuMVVMTests;
+			productName = KitsuMVVMTests;
+			productReference = 86A9351C22E103E300FFFFB7 /* KitsuMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86A9352622E103E300FFFFB7 /* KitsuMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A9353622E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVMUITests" */;
+			buildPhases = (
+				86A9352322E103E300FFFFB7 /* Sources */,
+				86A9352422E103E300FFFFB7 /* Frameworks */,
+				86A9352522E103E300FFFFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86A9352922E103E300FFFFB7 /* PBXTargetDependency */,
+			);
+			name = KitsuMVVMUITests;
+			productName = KitsuMVVMUITests;
+			productReference = 86A9352722E103E300FFFFB7 /* KitsuMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86A934FE22E103E100FFFFB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Carlos Landaverde";
+				TargetAttributes = {
+					86A9350522E103E100FFFFB7 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					86A9351B22E103E300FFFFB7 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 86A9350522E103E100FFFFB7;
+					};
+					86A9352622E103E300FFFFB7 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 86A9350522E103E100FFFFB7;
+					};
+				};
+			};
+			buildConfigurationList = 86A9350122E103E100FFFFB7 /* Build configuration list for PBXProject "KitsuMVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86A934FD22E103E100FFFFB7;
+			productRefGroup = 86A9350722E103E100FFFFB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86A9350522E103E100FFFFB7 /* KitsuMVVM */,
+				86A9351B22E103E300FFFFB7 /* KitsuMVVMTests */,
+				86A9352622E103E300FFFFB7 /* KitsuMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86A9350422E103E100FFFFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A9351622E103E300FFFFB7 /* LaunchScreen.storyboard in Resources */,
+				86A9351322E103E300FFFFB7 /* Preview Assets.xcassets in Resources */,
+				86A9351022E103E300FFFFB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A9351A22E103E300FFFFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A9352522E103E300FFFFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86A9350222E103E100FFFFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A9357022E1216A00FFFFB7 /* ExperimentServiceType.swift in Sources */,
+				86A9355022E10D6F00FFFFB7 /* TrackerService.swift in Sources */,
+				86A9357322E1216A00FFFFB7 /* TrackerType.swift in Sources */,
+				86A9354A22E10AFC00FFFFB7 /* AnimeDataFlowType.swift in Sources */,
+				86A9354622E107C200FFFFB7 /* AnimeDetailView.swift in Sources */,
+				86A9350A22E103E100FFFFB7 /* AppDelegate.swift in Sources */,
+				86A9356622E110CE00FFFFB7 /* SearchAnimeRequest.swift in Sources */,
+				86A9356A22E1163E00FFFFB7 /* AnimeAttributesModel.swift in Sources */,
+				86A9354422E1074600FFFFB7 /* AnimeListRow.swift in Sources */,
+				86A9350C22E103E100FFFFB7 /* SceneDelegate.swift in Sources */,
+				86A9356822E111B200FFFFB7 /* ExperimentService.swift in Sources */,
+				86A9353E22E1051E00FFFFB7 /* AnimeListView.swift in Sources */,
+				86A9356422E1102E00FFFFB7 /* APIServices.swift in Sources */,
+				86A9354822E1091700FFFFB7 /* AnimeDetailViewModel.swift in Sources */,
+				86A9354222E1061200FFFFB7 /* AnimeModel.swift in Sources */,
+				86A9357122E1216A00FFFFB7 /* APIServiceType.swift in Sources */,
+				86A9354C22E10B8800FFFFB7 /* SearchAnimeModel.swift in Sources */,
+				86A9354022E1056B00FFFFB7 /* AnimeListViewModel.swift in Sources */,
+				86A9354E22E10BF600FFFFB7 /* APIServiceError.swift in Sources */,
+				86A9357222E1216A00FFFFB7 /* APIRequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A9351822E103E300FFFFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A9352122E103E300FFFFB7 /* KitsuMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A9352322E103E300FFFFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A9352C22E103E300FFFFB7 /* KitsuMVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86A9351E22E103E300FFFFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86A9350522E103E100FFFFB7 /* KitsuMVVM */;
+			targetProxy = 86A9351D22E103E300FFFFB7 /* PBXContainerItemProxy */;
+		};
+		86A9352922E103E300FFFFB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86A9350522E103E100FFFFB7 /* KitsuMVVM */;
+			targetProxy = 86A9352822E103E300FFFFB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86A9351422E103E300FFFFB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A9351522E103E300FFFFB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86A9352E22E103E300FFFFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86A9352F22E103E300FFFFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86A9353122E103E300FFFFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "KitsuMVVM/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KitsuMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladd.KitsuMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86A9353222E103E300FFFFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "KitsuMVVM/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KitsuMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladd.KitsuMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86A9353422E103E300FFFFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KitsuMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladd.KitsuMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KitsuMVVM.app/KitsuMVVM";
+			};
+			name = Debug;
+		};
+		86A9353522E103E300FFFFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KitsuMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladd.KitsuMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KitsuMVVM.app/KitsuMVVM";
+			};
+			name = Release;
+		};
+		86A9353722E103E300FFFFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KitsuMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladd.KitsuMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KitsuMVVM;
+			};
+			name = Debug;
+		};
+		86A9353822E103E300FFFFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KitsuMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ladd.KitsuMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KitsuMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86A9350122E103E100FFFFB7 /* Build configuration list for PBXProject "KitsuMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A9352E22E103E300FFFFB7 /* Debug */,
+				86A9352F22E103E300FFFFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86A9353022E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A9353122E103E300FFFFB7 /* Debug */,
+				86A9353222E103E300FFFFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86A9353322E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A9353422E103E300FFFFB7 /* Debug */,
+				86A9353522E103E300FFFFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86A9353622E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A9353722E103E300FFFFB7 /* Debug */,
+				86A9353822E103E300FFFFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86A934FE22E103E100FFFFB7 /* Project object */;
+}
