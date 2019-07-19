@@ -15,4 +15,6 @@ struct AnimeAttributesModel : Decodable, Hashable {
     var slug: String
     var synopsis: String
     var canonicalTitle: String
+    var status: String
+    var posterImage: AnimePosterImageModel
 }

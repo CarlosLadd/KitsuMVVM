@@ -58,13 +58,11 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
     
     private let apiService: APIServiceType
     private let trackerService: TrackerType
-    private let experimentService: ExperimentServiceType
+    
     init(apiService: APIServiceType = APIService(),
-         trackerService: TrackerType = TrackerService(),
-         experimentService: ExperimentServiceType = ExperimentService()) {
+         trackerService: TrackerType = TrackerService()) {
         self.apiService = apiService
         self.trackerService = trackerService
-        self.experimentService = experimentService
         
         didChange = didChangeSubject.eraseToAnyPublisher()
         
@@ -118,17 +116,10 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
             .map { _ in true }
             .assign(to: \.output.isErrorShown, on: self)
         
-        let showIconStream = onAppearSubject
-            .map { [experimentService] _ in
-                experimentService.experiment(for: .showIcon)
-        }
-        .assign(to: \..output.shouldShowIcon, on: self)
-        
         cancellables += [
             animesStream,
             errorStream,
-            errorMessageStream,
-            showIconStream
+            errorMessageStream
         ]
     }
 }

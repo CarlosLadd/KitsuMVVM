@@ -27,7 +27,13 @@ struct AnimeDetailView_Previews : PreviewProvider {
             anime: AnimeModel(
                 id: "1",
                 type: "test",
-                attributes: AnimeAttributesModel(createdAt: "18/07/2019", updatedAt: "18/07/2019", slug: "demo slug", synopsis: "demo anime", canonicalTitle: "Demo Anime")
+                attributes: AnimeAttributesModel(createdAt: "18/07/2019",
+                                                 updatedAt: "18/07/2019",
+                                                 slug: "demo slug",
+                                                 synopsis: "demo anime",
+                                                 canonicalTitle: "Demo Anime",
+                                                 status: "Finished",
+                                                 posterImage: AnimePosterImageModel(tiny: "", small: ""))
             ))
         )
     }

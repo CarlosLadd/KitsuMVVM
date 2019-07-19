@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296BBEF5123D9FC40A4B5959 /* Pods_KitsuMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DE084132E542DC1FA7A101 /* Pods_KitsuMVVM.framework */; };
+		86581ABA22E14A1A00C06DBD /* AnimePosterImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86581AB922E14A1A00C06DBD /* AnimePosterImageModel.swift */; };
+		86581ABC22E14E6200C06DBD /* ImageViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86581ABB22E14E6200C06DBD /* ImageViewRow.swift */; };
 		86A9350A22E103E100FFFFB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9350922E103E100FFFFB7 /* AppDelegate.swift */; };
 		86A9350C22E103E100FFFFB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9350B22E103E100FFFFB7 /* SceneDelegate.swift */; };
 		86A9351022E103E300FFFFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A9350F22E103E300FFFFB7 /* Assets.xcassets */; };
@@ -26,12 +29,12 @@
 		86A9355022E10D6F00FFFFB7 /* TrackerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9354F22E10D6F00FFFFB7 /* TrackerService.swift */; };
 		86A9356422E1102E00FFFFB7 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356322E1102E00FFFFB7 /* APIServices.swift */; };
 		86A9356622E110CE00FFFFB7 /* SearchAnimeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356522E110CE00FFFFB7 /* SearchAnimeRequest.swift */; };
-		86A9356822E111B200FFFFB7 /* ExperimentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356722E111B200FFFFB7 /* ExperimentService.swift */; };
 		86A9356A22E1163E00FFFFB7 /* AnimeAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356922E1163E00FFFFB7 /* AnimeAttributesModel.swift */; };
-		86A9357022E1216A00FFFFB7 /* ExperimentServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356C22E1216A00FFFFB7 /* ExperimentServiceType.swift */; };
 		86A9357122E1216A00FFFFB7 /* APIServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356D22E1216A00FFFFB7 /* APIServiceType.swift */; };
 		86A9357222E1216A00FFFFB7 /* APIRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356E22E1216A00FFFFB7 /* APIRequestType.swift */; };
 		86A9357322E1216A00FFFFB7 /* TrackerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9356F22E1216A00FFFFB7 /* TrackerType.swift */; };
+		EE163138BDAE418DFD499677 /* Pods_KitsuMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C9A349885DD6A06E5D1A5 /* Pods_KitsuMVVMUITests.framework */; };
+		F674BA35D2AAAF9F84D0538D /* Pods_KitsuMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A319F168AC804F7ECBEDF53 /* Pods_KitsuMVVMTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A319F168AC804F7ECBEDF53 /* Pods_KitsuMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitsuMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFFCB2C33AC51F4A67B85C4 /* Pods-KitsuMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitsuMVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-KitsuMVVMUITests/Pods-KitsuMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86581AB922E14A1A00C06DBD /* AnimePosterImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimePosterImageModel.swift; sourceTree = "<group>"; };
+		86581ABB22E14E6200C06DBD /* ImageViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewRow.swift; sourceTree = "<group>"; };
 		86A9350622E103E100FFFFB7 /* KitsuMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitsuMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A9350922E103E100FFFFB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A9350B22E103E100FFFFB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,12 +84,17 @@
 		86A9354F22E10D6F00FFFFB7 /* TrackerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerService.swift; sourceTree = "<group>"; };
 		86A9356322E1102E00FFFFB7 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		86A9356522E110CE00FFFFB7 /* SearchAnimeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAnimeRequest.swift; sourceTree = "<group>"; };
-		86A9356722E111B200FFFFB7 /* ExperimentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentService.swift; sourceTree = "<group>"; };
 		86A9356922E1163E00FFFFB7 /* AnimeAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeAttributesModel.swift; sourceTree = "<group>"; };
-		86A9356C22E1216A00FFFFB7 /* ExperimentServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperimentServiceType.swift; sourceTree = "<group>"; };
 		86A9356D22E1216A00FFFFB7 /* APIServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceType.swift; sourceTree = "<group>"; };
 		86A9356E22E1216A00FFFFB7 /* APIRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestType.swift; sourceTree = "<group>"; };
 		86A9356F22E1216A00FFFFB7 /* TrackerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerType.swift; sourceTree = "<group>"; };
+		AA80772363813DDE9953571D /* Pods-KitsuMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitsuMVVM.debug.xcconfig"; path = "Target Support Files/Pods-KitsuMVVM/Pods-KitsuMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		D68C9A349885DD6A06E5D1A5 /* Pods_KitsuMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitsuMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90C2062D2DB16B6EF1996CF /* Pods-KitsuMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitsuMVVM.release.xcconfig"; path = "Target Support Files/Pods-KitsuMVVM/Pods-KitsuMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		E0253EC3DE472D84011DC153 /* Pods-KitsuMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitsuMVVMTests.release.xcconfig"; path = "Target Support Files/Pods-KitsuMVVMTests/Pods-KitsuMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		E912239040705C289995DF19 /* Pods-KitsuMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitsuMVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-KitsuMVVMUITests/Pods-KitsuMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EADB8541A79E1016416C3676 /* Pods-KitsuMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitsuMVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-KitsuMVVMTests/Pods-KitsuMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3DE084132E542DC1FA7A101 /* Pods_KitsuMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitsuMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296BBEF5123D9FC40A4B5959 /* Pods_KitsuMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F674BA35D2AAAF9F84D0538D /* Pods_KitsuMVVMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +118,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE163138BDAE418DFD499677 /* Pods_KitsuMVVMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2681F936952D2688F74FE106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA80772363813DDE9953571D /* Pods-KitsuMVVM.debug.xcconfig */,
+				D90C2062D2DB16B6EF1996CF /* Pods-KitsuMVVM.release.xcconfig */,
+				EADB8541A79E1016416C3676 /* Pods-KitsuMVVMTests.debug.xcconfig */,
+				E0253EC3DE472D84011DC153 /* Pods-KitsuMVVMTests.release.xcconfig */,
+				2EFFCB2C33AC51F4A67B85C4 /* Pods-KitsuMVVMUITests.debug.xcconfig */,
+				E912239040705C289995DF19 /* Pods-KitsuMVVMUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		86A934FD22E103E100FFFFB7 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +145,8 @@
 				86A9351F22E103E300FFFFB7 /* KitsuMVVMTests */,
 				86A9352A22E103E300FFFFB7 /* KitsuMVVMUITests */,
 				86A9350722E103E100FFFFB7 /* Products */,
+				2681F936952D2688F74FE106 /* Pods */,
+				C4B9FCD93B18D31FC5AC2EFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,7 +219,9 @@
 			children = (
 				86A9354122E1061200FFFFB7 /* AnimeModel.swift */,
 				86A9356922E1163E00FFFFB7 /* AnimeAttributesModel.swift */,
+				86581AB922E14A1A00C06DBD /* AnimePosterImageModel.swift */,
 				86A9354B22E10B8800FFFFB7 /* SearchAnimeModel.swift */,
+				86581ABB22E14E6200C06DBD /* ImageViewRow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,7 +243,6 @@
 				86A9354D22E10BF600FFFFB7 /* APIServiceError.swift */,
 				86A9354F22E10D6F00FFFFB7 /* TrackerService.swift */,
 				86A9356522E110CE00FFFFB7 /* SearchAnimeRequest.swift */,
-				86A9356722E111B200FFFFB7 /* ExperimentService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,12 +250,21 @@
 		86A9356B22E1216A00FFFFB7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				86A9356C22E1216A00FFFFB7 /* ExperimentServiceType.swift */,
 				86A9356D22E1216A00FFFFB7 /* APIServiceType.swift */,
 				86A9356E22E1216A00FFFFB7 /* APIRequestType.swift */,
 				86A9356F22E1216A00FFFFB7 /* TrackerType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C4B9FCD93B18D31FC5AC2EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3DE084132E542DC1FA7A101 /* Pods_KitsuMVVM.framework */,
+				1A319F168AC804F7ECBEDF53 /* Pods_KitsuMVVMTests.framework */,
+				D68C9A349885DD6A06E5D1A5 /* Pods_KitsuMVVMUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86A9353022E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVM" */;
 			buildPhases = (
+				BA07A8EEF5E486AC286847BC /* [CP] Check Pods Manifest.lock */,
 				86A9350222E103E100FFFFB7 /* Sources */,
 				86A9350322E103E100FFFFB7 /* Frameworks */,
 				86A9350422E103E100FFFFB7 /* Resources */,
+				CE69324E72C0C801DCD712BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86A9353322E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVMTests" */;
 			buildPhases = (
+				1B7A45F468F7EC8C98E3171D /* [CP] Check Pods Manifest.lock */,
 				86A9351822E103E300FFFFB7 /* Sources */,
 				86A9351922E103E300FFFFB7 /* Frameworks */,
 				86A9351A22E103E300FFFFB7 /* Resources */,
@@ -269,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86A9353622E103E300FFFFB7 /* Build configuration list for PBXNativeTarget "KitsuMVVMUITests" */;
 			buildPhases = (
+				D86513307F06E0AB8759D90B /* [CP] Check Pods Manifest.lock */,
 				86A9352322E103E300FFFFB7 /* Sources */,
 				86A9352422E103E300FFFFB7 /* Frameworks */,
 				86A9352522E103E300FFFFB7 /* Resources */,
@@ -353,12 +397,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B7A45F468F7EC8C98E3171D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KitsuMVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA07A8EEF5E486AC286847BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KitsuMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE69324E72C0C801DCD712BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitsuMVVM/Pods-KitsuMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitsuMVVM/Pods-KitsuMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KitsuMVVM/Pods-KitsuMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D86513307F06E0AB8759D90B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KitsuMVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86A9350222E103E100FFFFB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A9357022E1216A00FFFFB7 /* ExperimentServiceType.swift in Sources */,
+				86581ABC22E14E6200C06DBD /* ImageViewRow.swift in Sources */,
 				86A9355022E10D6F00FFFFB7 /* TrackerService.swift in Sources */,
 				86A9357322E1216A00FFFFB7 /* TrackerType.swift in Sources */,
 				86A9354A22E10AFC00FFFFB7 /* AnimeDataFlowType.swift in Sources */,
@@ -367,8 +497,8 @@
 				86A9356622E110CE00FFFFB7 /* SearchAnimeRequest.swift in Sources */,
 				86A9356A22E1163E00FFFFB7 /* AnimeAttributesModel.swift in Sources */,
 				86A9354422E1074600FFFFB7 /* AnimeListRow.swift in Sources */,
+				86581ABA22E14A1A00C06DBD /* AnimePosterImageModel.swift in Sources */,
 				86A9350C22E103E100FFFFB7 /* SceneDelegate.swift in Sources */,
-				86A9356822E111B200FFFFB7 /* ExperimentService.swift in Sources */,
 				86A9353E22E1051E00FFFFB7 /* AnimeListView.swift in Sources */,
 				86A9356422E1102E00FFFFB7 /* APIServices.swift in Sources */,
 				86A9354822E1091700FFFFB7 /* AnimeDetailViewModel.swift in Sources */,
@@ -540,6 +670,7 @@
 		};
 		86A9353122E103E300FFFFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA80772363813DDE9953571D /* Pods-KitsuMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +690,7 @@
 		};
 		86A9353222E103E300FFFFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90C2062D2DB16B6EF1996CF /* Pods-KitsuMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +710,7 @@
 		};
 		86A9353422E103E300FFFFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADB8541A79E1016416C3676 /* Pods-KitsuMVVMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +731,7 @@
 		};
 		86A9353522E103E300FFFFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0253EC3DE472D84011DC153 /* Pods-KitsuMVVMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -618,6 +752,7 @@
 		};
 		86A9353722E103E300FFFFB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EFFCB2C33AC51F4A67B85C4 /* Pods-KitsuMVVMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -637,6 +772,7 @@
 		};
 		86A9353822E103E300FFFFB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E912239040705C289995DF19 /* Pods-KitsuMVVMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

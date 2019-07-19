@@ -15,9 +15,12 @@ struct AnimeListRow: View {
     
     var body: some View {
         NavigationLink(destination: AnimeDetailView(viewModel: .init(anime: anime))) {
-            VStack (alignment: .leading) {
-                Text(anime.attributes.canonicalTitle).bold().padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
-                Text(anime.attributes.synopsis).lineLimit(2).padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+            HStack {
+                ImageViewRow(anime: anime, imageSize: 75.0)
+                VStack (alignment: .leading) {
+                    Text(anime.attributes.canonicalTitle).bold().padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
+                    Text(anime.attributes.synopsis).lineLimit(4).padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
+                }
             }
         }
     }
@@ -30,7 +33,13 @@ struct AnimeListRow_Previews : PreviewProvider {
             AnimeModel(
                 id: "1",
                 type: "test",
-                attributes: AnimeAttributesModel(createdAt: "18/07/2019", updatedAt: "18/07/2019", slug: "test slug", synopsis: "demo-anime", canonicalTitle: "Demo Anime")
+                attributes: AnimeAttributesModel(createdAt: "18/07/2019",
+                                                 updatedAt: "18/07/2019",
+                                                 slug: "test slug",
+                                                 synopsis: "demo-anime",
+                                                 canonicalTitle: "Demo Anime",
+                                                 status: "Finished",
+                                                 posterImage: AnimePosterImageModel(tiny: "", small: ""))
             )
         )
     }

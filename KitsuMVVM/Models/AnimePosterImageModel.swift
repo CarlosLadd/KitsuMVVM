@@ -1,5 +1,5 @@
 //
-//  ExperimentServiceType.swift
+//  AnimePosterImageModel.swift
 //  KitsuMVVM
 //
 //  Created by Carlos Landaverde on 7/18/19.
@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import SwiftUI
 
-protocol ExperimentServiceType {
-    func experiment(for key: ExperimentKey) -> Bool
+struct AnimePosterImageModel : Decodable, Hashable {
+    var tiny: String
+    var small: String
 }
