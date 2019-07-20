@@ -11,13 +11,13 @@ import SwiftUI
 import Combine
 
 final class AnimeDetailViewModel: BindableObject {
-    let didChange: AnyPublisher<AnimeListViewModel, Never>
-    let didChangeSubject = PassthroughSubject<AnimeListViewModel, Never>()
+    let willChange: AnyPublisher<AnimeListViewModel, Never>
+    let willChangeSubject = PassthroughSubject<AnimeListViewModel, Never>()
     
     let anime: AnimeModel
     
     init(anime: AnimeModel) {
-        didChange = AnyPublisher(didChangeSubject)
+        willChange = AnyPublisher(willChangeSubject)
         self.anime = anime
     }
 }

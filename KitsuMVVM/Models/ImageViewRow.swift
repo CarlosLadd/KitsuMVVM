@@ -39,10 +39,10 @@ struct ImageViewContainer: View {
 }
 
 class DownloadTaskImageURL: BindableObject {
-    var didChange = PassthroughSubject<Data, Never>()
+    var willChange = PassthroughSubject<Data, Never>()
     var data = Data() {
         didSet {
-            didChange.send(data)
+            willChange.send(data)
         }
     }
     

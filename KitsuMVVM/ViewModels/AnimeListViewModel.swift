@@ -14,8 +14,8 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
     typealias InputType = Input
     typealias OutputType = Output
     
-    let didChange: AnyPublisher<Void, Never>
-    private let didChangeSubject = PassthroughSubject<Void, Never>()
+    let willChange: AnyPublisher<Void, Never>
+    private let willChangeSubject = PassthroughSubject<Void, Never>()
     private var cancellables: [AnyCancellable] = []
     
     // MARK: Input
@@ -43,7 +43,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
     
     private(set) var output = Output() {
         didSet {
-            didChangeSubject.send(())
+            willChangeSubject.send(())
         }
     }
     
@@ -64,7 +64,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
         self.apiService = apiService
         self.trackerService = trackerService
         
-        didChange = didChangeSubject.eraseToAnyPublisher()
+        willChange = willChangeSubject.eraseToAnyPublisher()
         
         bindInputs()
         bindOutputs()
@@ -75,7 +75,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
         let responsePublisher = onAppearSubject
             .flatMap { [apiService] _ in
                 apiService.response(from: request)
-                    .catch { [weak self] error -> Publishers.Empty<SearchAnimeModel, Never> in
+                    .catch { [weak self] error -> Empty<SearchAnimeModel, Never> in
                         self?.errorSubject.send(error)
                         return .init()
                 }

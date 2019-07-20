@@ -16,7 +16,7 @@ struct AnimeListView : View {
             List(viewModel.output.animes) { anime in
                 AnimeListRow(anime: anime)
             }
-            .presentation($viewModel.isErrorShown) { () -> Alert in
+            .alert(isPresented: $viewModel.isErrorShown) { () -> Alert in
                 Alert(title: Text("Error"), message: Text(viewModel.output.errorMessage))
             }
             .navigationBarTitle(Text("Anime List"))
