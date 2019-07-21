@@ -72,6 +72,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
     
     private func bindInputs() {
         let request = SearchAnimeRequest()
+        
         let responsePublisher = onAppearSubject
             .flatMap { [apiService] _ in
                 apiService.response(from: request)

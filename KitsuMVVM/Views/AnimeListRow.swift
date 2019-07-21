@@ -15,13 +15,16 @@ struct AnimeListRow: View {
     
     var body: some View {
         NavigationLink(destination: AnimeDetailView(viewModel: .init(anime: anime))) {
-            HStack {
-                ImageViewRow(anime: anime, imageSize: 75.0)
-                VStack (alignment: .leading) {
-                    Text(anime.attributes.canonicalTitle).bold().padding(EdgeInsets(top: 5, leading: 0, bottom: 0, trailing: 0))
-                    Text(anime.attributes.synopsis).lineLimit(4).padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
+            VStack (alignment: .leading, spacing: 10) {
+                HStack {
+                    ImageViewRow(animePosterURL: anime.attributes.posterImage.tiny, imageSize: 75.0).aspectRatio(contentMode: .fit)
+                    VStack (alignment: .leading) {
+                        Text(anime.attributes.canonicalTitle).bold().lineLimit(2)
+                        Text(anime.attributes.synopsis).lineLimit(3)
+                    }
                 }
             }
+            .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
         }
     }
 }

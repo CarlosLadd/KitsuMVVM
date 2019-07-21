@@ -11,12 +11,12 @@ import SwiftUI
 import Combine
 
 struct ImageViewRow: View {
-    let anime: AnimeModel
+    let animePosterURL: String
     let imageSize: CGFloat
     
     var body: some View {
         VStack(alignment: .center) {
-            ImageViewContainer(imageUrl: anime.attributes.posterImage.tiny, size: imageSize)
+            ImageViewContainer(imageUrl: animePosterURL, size: imageSize)
         }
     }
 }

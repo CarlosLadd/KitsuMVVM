@@ -13,8 +13,13 @@ struct AnimeDetailView: View {
     @ObjectBinding var viewModel: AnimeDetailViewModel
     
     var body: some View {
-        VStack {
-            Text(viewModel.anime.attributes.canonicalTitle).bold()
+        VStack (alignment: .center, spacing: 0) {
+            ImageViewRow(animePosterURL: viewModel.anime.attributes.posterImage.small, imageSize: 150.0)
+            
+            Text(viewModel.anime.attributes.canonicalTitle).bold().lineLimit(nil).padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
+            Text("Slug: " + viewModel.anime.attributes.slug)
+            Text("Status: " + viewModel.anime.attributes.status)
+            
             Text(viewModel.anime.attributes.synopsis).lineLimit(nil).padding(16)
         }
     }
@@ -34,7 +39,7 @@ struct AnimeDetailView_Previews : PreviewProvider {
                                                  canonicalTitle: "Demo Anime",
                                                  status: "Finished",
                                                  posterImage: AnimePosterImageModel(tiny: "", small: ""))
-            ))
+        ))
         )
     }
 }
