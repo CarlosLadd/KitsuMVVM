@@ -22,7 +22,7 @@ struct ImageViewRow: View {
 }
 
 struct ImageViewContainer: View {
-    @ObjectBinding var remoteImageURL: DownloadTaskImageURL
+    @ObservedObject var remoteImageURL: DownloadTaskImageURL
     let imageSize: CGFloat
     
     init(imageUrl: String, size: CGFloat) {
@@ -38,11 +38,11 @@ struct ImageViewContainer: View {
     }
 }
 
-class DownloadTaskImageURL: BindableObject {
-    var willChange = PassthroughSubject<Data, Never>()
+class DownloadTaskImageURL: ObservableObject {
+    var objectWillChange = PassthroughSubject<Data, Never>()
     var data = Data() {
         didSet {
-            willChange.send(data)
+            objectWillChange.send(data)
         }
     }
     

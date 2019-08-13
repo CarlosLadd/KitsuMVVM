@@ -10,14 +10,14 @@ import Foundation
 import SwiftUI
 import Combine
 
-final class AnimeDetailViewModel: BindableObject {
-    let willChange: AnyPublisher<AnimeListViewModel, Never>
-    let willChangeSubject = PassthroughSubject<AnimeListViewModel, Never>()
+final class AnimeDetailViewModel: ObservableObject {
+    let objectWillChange: AnyPublisher<AnimeListViewModel, Never>
+    let objectWillChangeSubject = PassthroughSubject<AnimeListViewModel, Never>()
     
     let anime: AnimeModel
     
     init(anime: AnimeModel) {
-        willChange = AnyPublisher(willChangeSubject)
+        objectWillChange = objectWillChangeSubject.eraseToAnyPublisher()
         self.anime = anime
     }
 }

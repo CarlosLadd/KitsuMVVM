@@ -10,12 +10,12 @@ import Foundation
 import SwiftUI
 import Combine
 
-final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
+final class AnimeListViewModel: ObservableObject, AnimeDataFlowType {
     typealias InputType = Input
     typealias OutputType = Output
     
-    let willChange: AnyPublisher<Void, Never>
-    private let willChangeSubject = PassthroughSubject<Void, Never>()
+    let objectWillChange: AnyPublisher<Void, Never>
+    private let objectWillChangeSubject = PassthroughSubject<Void, Never>()
     private var cancellables: [AnyCancellable] = []
     
     // MARK: Input
@@ -43,7 +43,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
     
     private(set) var output = Output() {
         didSet {
-            willChangeSubject.send(())
+            objectWillChangeSubject.send(())
         }
     }
     
@@ -64,7 +64,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
         self.apiService = apiService
         self.trackerService = trackerService
         
-        willChange = willChangeSubject.eraseToAnyPublisher()
+        objectWillChange = objectWillChangeSubject.eraseToAnyPublisher()
         
         bindInputs()
         bindOutputs()
@@ -86,7 +86,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
             .share()
             .subscribe(responseSubject)
         
-        _ = trackingSubject
+        let trackingSubjectStream = trackingSubject
             .sink(receiveValue: trackerService.log)
         
         let trackingStream = onAppearSubject
@@ -95,6 +95,7 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
         
         cancellables += [
             responseStream,
+            trackingSubjectStream,
             trackingStream
         ]
     }
@@ -107,8 +108,8 @@ final class AnimeListViewModel: BindableObject, AnimeDataFlowType {
         let errorMessageStream = errorSubject
             .map { error -> String in
                 switch error {
-                case .responseError: return "network error"
-                case .parseError: return "parse error"
+                case .responseError: return "Network error"
+                case .parseError: return "Parse error"
                 }
         }
         .assign(to: \.output.errorMessage, on: self)

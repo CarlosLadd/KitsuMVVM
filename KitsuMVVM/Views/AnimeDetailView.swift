@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 struct AnimeDetailView: View {
-    @ObjectBinding var viewModel: AnimeDetailViewModel
+    @ObservedObject var viewModel: AnimeDetailViewModel
     
     var body: some View {
         VStack (alignment: .center, spacing: 0) {

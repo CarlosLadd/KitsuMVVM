@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct AnimeListView : View {
-    @ObjectBinding var viewModel: AnimeListViewModel
+    @ObservedObject var viewModel: AnimeListViewModel
     
     var body: some View {
         NavigationView {
