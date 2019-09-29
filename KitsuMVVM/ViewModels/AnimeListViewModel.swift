@@ -14,9 +14,15 @@ final class AnimeListViewModel: ObservableObject, AnimeDataFlowType {
     typealias InputType = Input
     typealias OutputType = Output
     
+    // MARK: Subjects
+    
+    private var cancellables: [AnyCancellable] = []
     let objectWillChange: AnyPublisher<Void, Never>
     private let objectWillChangeSubject = PassthroughSubject<Void, Never>()
-    private var cancellables: [AnyCancellable] = []
+    private let onAppearSubject = PassthroughSubject<Void, Never>()
+    private let responseSubject = PassthroughSubject<SearchAnimeModel, Never>()
+    private let errorSubject = PassthroughSubject<APIServiceError, Never>()
+    private let trackingSubject = PassthroughSubject<TrackEventType, Never>()
     
     // MARK: Input
     
@@ -29,8 +35,6 @@ final class AnimeListViewModel: ObservableObject, AnimeDataFlowType {
         case .onAppear: onAppearSubject.send(())
         }
     }
-    
-    private let onAppearSubject = PassthroughSubject<Void, Never>()
     
     // MARK: Output
     
@@ -52,12 +56,12 @@ final class AnimeListViewModel: ObservableObject, AnimeDataFlowType {
         set { output.isErrorShown = newValue }
     }
     
-    private let responseSubject = PassthroughSubject<SearchAnimeModel, Never>()
-    private let errorSubject = PassthroughSubject<APIServiceError, Never>()
-    private let trackingSubject = PassthroughSubject<TrackEventType, Never>()
+    // MARK: Services
     
     private let apiService: APIServiceType
     private let trackerService: TrackerType
+    
+    // MARK: Initializer
     
     init(apiService: APIServiceType = APIService(),
          trackerService: TrackerType = TrackerService()) {

@@ -13,14 +13,15 @@ struct AnimeDetailView: View {
     @ObservedObject var viewModel: AnimeDetailViewModel
     
     var body: some View {
-        VStack (alignment: .center, spacing: 0) {
+        VStack (alignment: .center) {
             ImageViewRow(animePosterURL: viewModel.anime.attributes.posterImage.small, imageSize: 150.0)
+            Text(viewModel.anime.attributes.canonicalTitle).bold().lineLimit(2).padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             
-            Text(viewModel.anime.attributes.canonicalTitle).bold().lineLimit(nil).padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             Text("Slug: " + viewModel.anime.attributes.slug)
             Text("Status: " + viewModel.anime.attributes.status)
+            Text(viewModel.anime.attributes.synopsis).padding(16).lineLimit(Int.max)
             
-            Text(viewModel.anime.attributes.synopsis).lineLimit(nil).padding(16)
+            Spacer()
         }
     }
 }
